@@ -1,11 +1,13 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useLocation } from "react-router-dom";
 import { increment, reset } from "../features/counterSlice";
 import Burenyuu from "../Sounds/Burenyuu.mp3";
 
 export function Neco() {
   const count = useSelector((state) => state.counter.value);
   const dispatch = useDispatch();
+  const location = useLocation();
 
   useEffect(() => {
     if (count % 5 === 0 && count !== 0) {
@@ -13,6 +15,12 @@ export function Neco() {
       audio.play();
     }
   }, [count]);
+
+  useEffect(() => {
+    return () => {
+      dispatch(reset());
+    };
+  }, [location, dispatch]);
 
   return (
     <div>
