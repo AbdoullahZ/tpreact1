@@ -1,0 +1,95 @@
+/* Accueil.css */
+
+/* Applique une police et un fond */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Conteneur principal */
+div {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Titre principal */
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Grille pour afficher les films */
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+/* Style des images des films */
+ul img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+ul img:hover {
+  transform: scale(1.05);
+}
+
+/* Image supplémentaire (exemple d'image de l'accueil) */
+img {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+/* Style du compteur et des boutons */
+div p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Aligner les boutons et le texte du compteur au centre */
+div {
+  text-align: center;
+}
+
+/* Ajouter une petite séparation entre le compteur et les films */
+div .counter-container {
+  margin-top: 30px;
+}
