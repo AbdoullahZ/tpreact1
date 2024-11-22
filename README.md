@@ -1,2 +1,2 @@
-# tpreact1.github.io
+# tpreact1
 Petit tp fait en react
