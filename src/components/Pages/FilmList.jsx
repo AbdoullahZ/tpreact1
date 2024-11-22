@@ -14,7 +14,6 @@ export function FilmList() {
         );
         setFilmList(response.data.results);
         setLoading(false);
-        console.log(response.data.results);
       } catch (err) {
         console.error(err);
         setLoading(false);

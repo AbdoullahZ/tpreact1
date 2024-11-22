@@ -11,7 +11,7 @@ import { store } from "./components/app/store";
 export function App() {
   return (
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename="/tpreact1">
         <Navbar />
         {/* Tout ce qui est ici, c'est le contenu de mon router */}
         <Routes>
